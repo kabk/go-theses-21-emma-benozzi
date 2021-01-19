@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Hadriano';
+  src: url('fonts/HadrianoLightRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sinistre';
+  src: url('fonts/Sinistre-StCaroline.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Arial Rounded';
+  src: url('fonts/ArialRoundedRegu.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial Rounded Bold';
+  src: url('fonts/ArialRoundedBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Henry';
+  src: url('fonts/HenryTrial-Italic.otf') format('opentype');
+}
+
+
+<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed"rel="stylesheet">* {
+}
+
+body {
+  background-color: floralwhite;
+}
+
+.name {
+    font-family: 'Henry';
+    font-size: 15pt;
+    line-height: 15pt;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 25px;
+}
+
+
+.index {
+    font-family: 'Henry';
+    color: black; 
+    font-size: 15pt;
+    line-height: 15pt;
+    text-align: center;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.index1 {
+    font-family: 'Arial Rounded Bold';
+    color: black; 
+    font-size: 20pt;
+    line-height: 22pt;
+    text-align: center;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.index2 {
+    font-family: 'Sinistre';
+    color: black; 
+    font-size: 30pt;
+    line-height: 33pt;
+    text-align: center;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.index3 {
+    font-family: 'Arial Rounded Bold';
+    color: black; 
+    font-size: 20pt;
+    line-height: 22pt;
+    text-align: center;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 30%;
+    align-content: left;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.image2 img {
+    width: 30%;
+    object-fit: cover;
+    align-content: right;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+       
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .subt {
+    font-family: 'Sinistre';
+    color: black; 
+    font-size: 65pt;
+    line-height: 63pt;
+    text-align: left;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          margin-top: -5%;
+          margin-left: 5%;
+      }
+}
+ 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .image img {
+  width: 60%;
+    object-fit: cover;
+    align-content: right;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .image2 img {
+  width: 60%;
+    object-fit: cover;
+    align-content: right;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+}
