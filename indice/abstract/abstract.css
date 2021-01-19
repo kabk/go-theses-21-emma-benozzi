@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Hadriano';
+  src: url('fonts/HadrianoLightRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sinistre';
+  src: url('fonts/Sinistre-StCaroline.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Arial Rounded';
+  src: url('fonts/ArialRoundedRegu.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial Rounded Bold';
+  src: url('fonts/ArialRoundedBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Henry';
+  src: url('fonts/HenryTrial-Italic.otf') format('opentype');
+}
+
+
+<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed"rel="stylesheet">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-size: cover; */
+  background-color: floralwhite;
+   /* height: 100vh;
+   background:linear-gradient(to bottom, white , rgb(136, 152, 255)); */
+  /*-webkit-animation: AnimationName 25s ease infinite;*/
+}
+
+.abstract h1 {
+    font-family: 'Sinistre';
+    font-size: 50pt;
+    line-height: 52pt;
+    text-align: center;
+}
+
+.abstract h2 {
+    font-family: 'Sinistre';
+    font-size: 50pt;
+    line-height: 52pt;
+    text-align: center;
+    font-weight: normal;
+}
+
+.abstract h3 {
+    font-family: 'Henry';
+    font-size: 22pt;
+    line-height: 25pt;
+    text-align: center;
+    font-weight: normal;
+}
+
+.abstract p {
+    font-family: 'Hadriano';
+    font-size: 20pt;
+    line-height: 23pt;
+    text-align: left;
+    width: 66%;
+    margin-left: 16.5%;
+}
+
+        
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .abstract p {
+        font-family: 'Hadriano';
+    font-size: 16pt;
+    line-height: 19pt;
+    text-align: left;
+    width: 95%;
+    margin-left: 2.5%;  
+      }
+}
