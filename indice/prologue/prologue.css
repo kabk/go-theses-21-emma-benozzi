@@ -98,6 +98,15 @@ body {
     line-height: 21pt;
 }
 
+.artwork {
+	width: 80%;
+    height:auto;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 9%;
+    border-radius: 15px;
+}
        
 @media only screen 
   and (min-device-width: 375px) 
@@ -112,7 +121,38 @@ body {
     margin-left: 2.5%;  
       }
 }
- 
+ @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+.prologue h3 {
+    font-family: 'Henry';
+    font-size: 17pt;
+    line-height: 19pt;
+    text-align: center;
+    font-weight: normal;
+}
+}
+ @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+.prologue h1 {
+  font-family: 'Sinistre';
+    font-size: 40pt;
+    line-height: 42pt;
+    text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
       
       .popup {
   position: absolute;
@@ -150,7 +190,24 @@ body {
     position: fixed;
 }
 
-#popup-note {
+#popup-note1 {
+  width:40%;
+    height:25%; 
+    top: 25%;
+  left: 25%;
+    position: fixed;
+}
+
+#popup-note2 {
+  width:40%;
+    height:25%; 
+    top: 25%;
+  left: 25%;
+    position: fixed;
+}
+
+
+#popup-note3 {
   width:40%;
     height:25%; 
     top: 25%;
@@ -203,10 +260,6 @@ body {
     position: absolute;
 }
 
-.popup .artwork {
-	width: auto;
-    height:95%;
-}
 
 .popup .note {
 	width: auto;
