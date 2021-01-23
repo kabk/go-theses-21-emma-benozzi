@@ -25,112 +25,327 @@
 
 
 <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed"rel="stylesheet">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: floralwhite;
-}
-
-.name {
-    font-family: 'Henry';
-    font-size: 15pt;
-    line-height: 15pt;
-    text-align: center;
-    font-weight: normal;
-    padding-top: 25px;
-}
-
-.title {
-    font-family: 'Arial Rounded Bold';
-    font-size: 27pt;
-    line-height: 27pt;
-    letter-spacing: 7px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.subt {
-    font-family: 'Sinistre';
-    color: black; 
-    font-size: 75pt;
-    line-height: 73pt;
-    text-align: center;
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.image img {
-    width: 30%;
-    align-content: left;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-.image2 img {
-    width: 30%;
-    object-fit: cover;
-    align-content: right;
-    position: absolute;
-    top: 0%;
-    right: 0%;
-}
-
-.image3 img {
-    width: 20%;
-    object-fit: cover;
-    align-content: right;
-    position: relative;
-    border-radius: 25px;
-    left: 40%;
-    margin-top: -2%;
+  /* background-size: cover; */
+  background-image: url("images/a4landsc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   /* height: 100vh;
+   background:linear-gradient(to bottom, white , rgb(136, 152, 255)); */
+  /*-webkit-animation: AnimationName 25s ease infinite;*/
 }
 
 .index {
-     font-family: 'Henry';
-    font-size: 15pt;
-    line-height: 15pt;
+    font-family: 'Array mono';
+    font-style: italic;
+    font-size: 13pt;
+    line-height: 18pt;
     text-align: center;
-    font-weight: normal;
-    vertical-align: bottom;
-    margin-bottom: 25px;
-    padding-top: 3%;
 }
 
+.text {
+    background-color: floralwhite;
+    border-radius: 25px;
+}
+
+.text h1 {
+    font-family: 'Sinistre';
+    font-size: 40pt;
+    line-height: 47pt;
+    text-align: center;
+}
+
+.text h2 {
+    font-family: 'Sinistre';
+    font-size: 50pt;
+    line-height: 52pt;
+    text-align: center;
+    font-weight: normal;
+}
+
+.text h3 {
+    font-family: 'Array mono';
+    font-style: italic;
+    font-size: 13pt;
+    line-height: 18pt;
+    width: 80%;
+    margin-left: 8.5%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+}
+
+.text h4 {
+    font-family: 'Sinistre';
+    font-size: 30pt;
+    line-height: 8pt;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+}
+
+.text p {
+    font-family: 'Hadriano';
+    font-size: 20pt;
+    line-height: 23pt;
+    text-align: left;
+    width: 66%;
+    margin-left: 16.5%;
+}
+
+.text p1 {
+    font-family: 'Arial Rounded';
+    font-size: 13pt;
+    line-height: 18pt;
+}
+
+.text p2 {
+    font-family: 'Henry';
+    font-size: 20pt;
+    line-height: 23pt;
+}
+
+.text p3 {
+    font-family: 'Henry';
+    font-size: 20pt;
+    line-height: 23pt;
+}
+
+.text p4 {
+    font-family: 'Arial Rounded';
+    font-size: 12pt;
+    line-height: 15pt;
+    width: 80%;
+    display: flex;
+    margin-left:9%;
+}
+
+.artwork {
+	width: 80%;
+    height:auto;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 9%;
+    border-radius: 15px;
+}
+
+.artworkmultiply {
+	width: 80%;
+    height:auto;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 9%;
+    border-radius: 15px;
+    mix-blend-mode: multiply;
+}
        
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-      .subt {
-    font-family: 'Sinistre';
-    color: black; 
-    font-size: 65pt;
-    line-height: 63pt;
+      .text p {
+        font-family: 'Hadriano';
+    font-size: 15pt;
+    line-height: 19pt;
     text-align: left;
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-          margin-top: -5%;
-          margin-left: 5%;
+    width: 95%;
+    margin-left: 2.5%;  
       }
 }
- 
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .image3 img {
-    width: 80%;
-    object-fit: cover;
-    align-content: right;
-    position: relative;
+.text p2 {
+    font-family: 'Henry';
+    font-size: 17pt;
+    line-height: 20pt;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+.text p3 {
+    font-family: 'Henry';
+    font-size: 17pt;
+    line-height: 20pt;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+body {
+  /* background-size: cover; */
+  background-image: url("images/skyyyy2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+    .popup {
+  position: absolute;
+  width: 90%;
+  top: 1%;
+  left: 0%;
+	border: 1px solid white;
     border-radius: 25px;
-    left: 10%;
-    margin-top: -5%;
+	padding: 30px;
+	background-color: white;
+	display: none;
+  box-shadow: 5px 10px 18px #888888;
+}
+}
+
+
+.menu-item {
+  padding: 0px;
+  background-color: none;
+  float: none;
+}
+
+.menu-item:hover {
+	cursor: pointer;
+	color: black;
+}
+
+/* specific location for the popups */
+
+#popup-image {
+  width:50%;
+    height:90%; 
+    top: 1%;
+  left: 25%;
+    position: fixed;
+}
+
+#popup-note1 {
+  width:40%;
+    height:25%; 
+    top: 25%;
+  left: 25%;
+    position: fixed;
+}
+
+#popup-note2 {
+  width:40%;
+    height:25%; 
+    top: 25%;
+  left: 25%;
+    position: fixed;
+}
+
+
+#popup-note3 {
+  width:40%;
+    height:25%; 
+    top: 25%;
+  left: 25%;
+    position: fixed;
+}
+
+#popup-note4 {
+  width:40%;
+    height:53%; 
+    top: 25%;
+  left: 25%;
+    position: fixed;
+}
+
+/* popup styling */
+
+.popup {
+  position: absolute;
+  width: 66%;
+  top: 1%;
+  left: 0%;
+	border: 1px solid white;
+    border-radius: 25px;
+	padding: 30px;
+	background-color: white;
+	display: none;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.popup h1 {
+}
+
+.popup p1 {
+    font-family: 'Arial Rounded';
+    font-size: 15pt;
+    line-height: 18pt;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+.popup p {
+    font-family: 'Arial Rounded';
+    font-size: 15pt;
+    line-height: 18pt;
+    top: 40px;;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+
+.popup .note1 {
+	width: auto;
+    height:50%;
+}
+
+.popup .notefour {
+	width: auto;
+    height:50%;
+}
+
+.close-button {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: url("images/closebutton.png") no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(255,255,255,0);
+	cursor: pointer;
+}
+
+.close-button:hover {
+	border: 1px solid white;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #popup-image {
+  width:90%;
+  height:100%; 
+  top: 1%;
+  left: 0.5%;
+}  
+      .popup .artwork {
+	width: 100%;
+    height:auto;
+  
 }
 }
