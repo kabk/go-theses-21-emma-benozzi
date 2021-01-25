@@ -23,6 +23,11 @@
   src: url('fonts/HenryTrial-Italic.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Array';
+  src: url('fonts/ArrayMono-RegularItalic.otf') format('opentype');
+}
+
 
 <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed"rel="stylesheet">* {
   margin: 0;
@@ -42,8 +47,7 @@ body {
 }
 
 .index {
-    font-family: 'Array mono';
-    font-style: italic;
+    font-family: 'Array';
     font-size: 13pt;
     line-height: 18pt;
     text-align: center;
@@ -56,8 +60,8 @@ body {
 
 .text h1 {
     font-family: 'Sinistre';
-    font-size: 40pt;
-    line-height: 47pt;
+    font-size: 50pt;
+    line-height: 57pt;
     text-align: center;
 }
 
@@ -70,12 +74,11 @@ body {
 }
 
 .text h3 {
-    font-family: 'Array mono';
-    font-style: italic;
+    font-family: 'Array';
     font-size: 13pt;
     line-height: 18pt;
-    width: 80%;
-    margin-left: 8.5%;
+    width: 66%;
+    margin-left: 16.5%;
     display: flex;
     align-content: center;
     align-items: center;
@@ -129,6 +132,15 @@ body {
     margin-left:9%;
 }
 
+.text p5 {
+    font-family: 'Hadriano';
+    font-size: 17pt;
+    line-height: 20pt;
+    display: flex;
+    text-align: center;
+    margin-left: 36%;
+}
+
 .artwork {
 	width: 80%;
     height:auto;
@@ -149,7 +161,92 @@ body {
     border-radius: 15px;
     mix-blend-mode: multiply;
 }
-       
+
+.icon {
+	width: 10%;
+    height:auto;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 45%;
+    border-radius: 15px;
+    mix-blend-mode: multiply;
+}
+ 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.text p5 {
+    font-family: 'Hadriano';
+    font-size: 10pt;
+    line-height: 13pt;
+    display: flex;
+    text-align: center;
+    margin-left: 14%;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.icon {
+	width: 33%;
+    height:auto;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 33%;
+    border-radius: 15px;
+    mix-blend-mode: multiply;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {     
+.text h1 {
+    font-family: 'Sinistre';
+    font-size: 25pt;
+    line-height: 35pt;
+    text-align: center;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {     
+.text h3 {
+    font-family: 'Array';
+    font-size: 10pt;
+    line-height: 15pt;
+    width: 80%;
+    margin-left: 8.5%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {     
+.text h4 {
+    font-family: 'Sinistre';
+    font-size: 23pt;
+    line-height: 20pt;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+}
+}
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -202,15 +299,11 @@ body {
 
     .popup {
   position: absolute;
-  width: 90%;
+  width: 100%;
   top: 1%;
   left: 0%;
-	border: 1px solid white;
-    border-radius: 25px;
 	padding: 30px;
-	background-color: white;
 	display: none;
-  box-shadow: 5px 10px 18px #888888;
 }
 }
 
@@ -228,94 +321,322 @@ body {
 
 /* specific location for the popups */
 
-#popup-image {
-  width:50%;
-    height:90%; 
-    top: 1%;
-  left: 25%;
-    position: fixed;
-}
 
 #popup-note1 {
   width:40%;
-    height:25%; 
-    top: 25%;
-  left: 25%;
-    position: fixed;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
 }
 
 #popup-note2 {
   width:40%;
-    height:25%; 
-    top: 25%;
-  left: 25%;
-    position: fixed;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
 }
 
 
 #popup-note3 {
   width:40%;
-    height:25%; 
-    top: 25%;
-  left: 25%;
-    position: fixed;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
 }
 
 #popup-note4 {
   width:40%;
-    height:53%; 
-    top: 25%;
-  left: 25%;
-    position: fixed;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+
+#popup-note5 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note6 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note7 {
+  width:40%;
+  height:25%; 
+   top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note8 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+
+#popup-note9 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note10 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note11 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note12 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note13 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note14 {
+  width:40%;
+  height:25%; 
+   top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note15 {
+  width:40%;
+  height:25%; 
+   top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note16 {
+  width:40%;
+  height:25%; 
+   top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note17 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note18 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note19 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note20 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note21 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note22 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note23 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note24 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note25 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note26 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note27 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note25 {
+  width:40%;
+  height:25%; 
+   top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note26 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note27 {
+  width:40%;
+  height:25%; 
+   top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note28 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note29 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note30 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note31 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
+}
+
+#popup-note32 {
+  width:40%;
+  height:25%; 
+  top: 20%;
+  left: 30%;
+  position: fixed;
 }
 
 /* popup styling */
+
 
 .popup {
   position: absolute;
   width: 66%;
   top: 1%;
   left: 0%;
-	border: 1px solid white;
-    border-radius: 25px;
-	padding: 30px;
-	background-color: white;
-	display: none;
-  box-shadow: 5px 10px 18px #888888;
-}
-
-.popup h1 {
-}
-
-.popup p1 {
-    font-family: 'Arial Rounded';
-    font-size: 15pt;
-    line-height: 18pt;
-    bottom: 20px;
-    left: 20px;
-    position: absolute;
+  display: none;
 }
 
 .popup p {
     font-family: 'Arial Rounded';
-    font-size: 15pt;
-    line-height: 18pt;
+    font-size: 10pt;
+    line-height: 13pt;
     top: 40px;;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
     left: 20px;
     right: 20px;
     position: absolute;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 
-.popup .note1 {
+.popup .note {
 	width: auto;
     height:50%;
 }
 
-.popup .notefour {
-	width: auto;
-    height:50%;
-}
+
 
 .close-button {
 	width: 40px;
@@ -325,12 +646,14 @@ body {
 	top: 10px;
 	background: url("images/closebutton.png") no-repeat;
 	background-size: cover;
-	border: 1px solid rgba(255,255,255,0);
+    background-color: yellow;
+	border: 1px solid rgba(255,255,255);
+    border-radius: 10px;
 	cursor: pointer;
 }
 
 .close-button:hover {
-	border: 1px solid white;
+	border: 1px solid transparent;
 }
 
 @media only screen 
@@ -343,9 +666,276 @@ body {
   top: 1%;
   left: 0.5%;
 }  
-      .popup .artwork {
-	width: 100%;
-    height:auto;
-  
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      #popup-note1 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note2 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+
+#popup-note3 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note4 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+
+#popup-note5 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note6 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note7 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note8 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+
+#popup-note9 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note10 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note11 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note12 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note13 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note14 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note15 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note16 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note17 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note18 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note19 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note20 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note21 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note22 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note23 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note24 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note25 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note26 {
+  width:40%;
+  height:25%; 
+  top: 2.5%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note27 {
+  width:40%;
+  height:25%; 
+  top: 5%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note25 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note26 {
+  width:40%;
+  height:25%; 
+  top: 2.5%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note27 {
+  width:40%;
+  height:25%; 
+  top: 5%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note28 {
+  width:40%;
+  height:25%; 
+  top: 10%;
+  left: 20.5%;
+  position: fixed;
+}
+
+#popup-note29 {
+  width:40%;
+  height:25%; 
+  top: 2.5%;
+  left: 20.5%;
+  position: fixed;
+}
+      
+#popup-note30 {
+  width:40%;
+  height:25%; 
+  top: 5%;
+  left: 20.5%;
+  position: fixed;
 }
 }
