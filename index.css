@@ -106,7 +106,7 @@ body {
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 275px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
@@ -125,7 +125,7 @@ body {
   height: 170vmin;
   left: 60%;
   position: absolute;
-  top: 47%;
+  top: 67%;
   transform: translate(-50%, -50%);
   width: 90vmin;
 }
